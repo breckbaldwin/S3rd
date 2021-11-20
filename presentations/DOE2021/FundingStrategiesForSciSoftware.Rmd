@@ -1,0 +1,69 @@
+---
+title: "Funding Strategies for Scientific Software"
+subtitle: ""
+author: "Breck Baldwin, breckbaldwin@gmail.com"
+email: "breckbaldwin@gmail.com"
+affiliation: "Safety 3rd"
+
+
+output:
+ bookdown::html_document2:
+#   includes:
+#     in_header: _html/ga.html 
+     
+#bibliography: citations.bib
+#csl: american-medical-association.csl
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	comment = NA
+)
+```
+
+__Challenge__
+
+The depth, breadth and impact of scientific open source software exceeded any expectations that one might have had at the turn of the millenia. We enjoy high quality, largely free, state-of-the-art technology all of which came to be due to a nearly magical confluence of cultural changes in software developers, backing by huge technology companies and the development of open source behavioral conventions that coordinate disparate developers towards a common goal. Remarkable and a bright spot for our current age. 
+
+Nobody planned this, it just came to be and we are very fortunate to have it. However the heady days of software creation are meeting the realities of middle age which are far less 'fun' and the work has become more like actual work involving maintenance, support and shoring up all the fast fun work with re-engineered, re-conceptualized versions of the same-ol-thing. This is work-work. 
+
+A very welcome development is that scientific funding agencies are recognizing that all this software could use some resources to help maintain it, e.g., NASA's recent call for infrastructure funding with the TOPS program. 
+
+But the funding process needs to evolve as well. Typical reviewers expect the innovation in proposals, lean hard on the reputations of the PI/team and then, if awarded, awards less funds than requested. Addressing each in turn:
+
+Innovation: Funders/reviewers, even for "infrastructure" proposals, want something new. In my experience infrastructure means build infrastructure, don't keep doing what you have been doing. Bigger, better, faster even if it is not a new idea. Much open source software needs to be rebuilt, perhaps with fewer features than current. Documentation needs to be rewritten--this is frankly boring but vital. 
+
+Reputation: The creators/maintainers of much open source scientific software are relatively junior, not famous and often don't have strong publication records. Teams of them work from soft money jobs with tremendous responsibility and impact but that is not reflected in Nature publications. 
+
+Volatile award amounts: The traditional 10-30% haircut upon award hurts small organizations and any efforts at diversity expressed in the funding application. A 90% paid position is not a position anymore, a diversity initiative squeezed into the application will be the first thing cut if all funds don't show up. There is no 'other source' of funding to cover funding short falls like a teaching positions when pure research funds fall short. 
+
+
+__Opportunity__
+
+The opportunity here revolves around fundamentally changing how funding decisions get made. The 'Intellectual Merit' and corresponding translation into whatever DOE/DARPA/NASA/NIH etc... calls it has to go. In its place are considerations like:
+* How much is the software used--count citations, downloads, forum use, questions, breathless letters of support.
+* Evidence of active development community--pull request processing, governance, forums, support.
+* Evidence that project knows how to spend money in support of project goals
+The 'Merit' of the proposal should instead be based on well define hurdles that an organization can aspire to achieve in a workperson like fashion-- "PR ageing less than 10 days on average, check, average response to forum post 36 hours, check, diversitity program in place, check..." Defining such hurdles will be a positive influence on scientific software development if done well and backed by actual funding.  
+
+In place of reputation I propose establishing clear criteria that are MINIMALY subject to interpretation by cranky reviewers. The randomness introduced by getting sympathetic/antagonistic reviewers has to go.  Ideally criteria are so clear that administrative level review is all that is required. Then organizations can have confidence that once the criteria are achieved that they qualify for funding. 
+
+Avoid funding top N: There is a temptation for reviewers/program managers to totally order proposals on quality metrics and award the top N given budget available. Budget reductions also come when 'a few more' proposals get squeezed in. See below for a simulation of totally ordered strategies vs random thresholded selection below for the consequences of this approach.
+
+Randomly select from N above threshold: Resources are limited, not all projects can be funded. In that case I suggest the awardees are chosen by random draw. No budget cuts allowed to spread the funds further, budget items can be struck if determined to be inappropriate. 
+
+__Maturity__
+
+Why now? Federal funders have figured out that infrastructure funding for all this free software might be a good idea. The point of this position paper is to modernize how funding is awarded with the hoped for outcome of a viable economic model for supporting vital packages like AstroPy, Numpy and my project Stan. 
+
+Below we see the consequences of selection of the top N proposals based on reviewer scores compared to randomly selecting N proposals that are above a predefined threshold. All projects started with the same merit value, and reputation value. Score for a round of funding was a random draw from a normal distribution on merit with standard deviation .1 from the merit value and added to the reputation value In place I advocate for a threshold approach that applies random selection to all proposals that meet clear evaluation criteria. Lets be all sciency and run some simulations: 
+
+This is on the face of it an obvious and dumb simulation of an award process over X epochs between 
+
+<img src="file:/home/breck/git/S3rd/graph.png" style="height:300px;align:center;" /> 
+
+__References__
+
