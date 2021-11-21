@@ -1,4 +1,4 @@
 # S3rd
 
-Documents for Saftey 3d company.
+Public documents for Saftey 3rd.
 
