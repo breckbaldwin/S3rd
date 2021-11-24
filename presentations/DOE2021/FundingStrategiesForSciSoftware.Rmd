@@ -1,5 +1,5 @@
 ---
-title: "Funding Strategies for Scientific Software"
+title: "A New Funding Strategy for Scientific Software and an Experiment"
 subtitle: ""
 author: "Breck Baldwin, breckbaldwin@gmail.com"
 email: "breckbaldwin@gmail.com"
@@ -26,120 +26,41 @@ knitr::opts_chunk$set(
 
 __Challenge__
 
-The depth, breadth and impact of scientific open source software exceeded any expectations that one might have had at the turn of the millenia. We enjoy high quality, largely free, state-of-the-art technology all of which came to be due to a nearly magical confluence of cultural changes in software developers, backing by huge technology companies and the development of open source behavioral conventions that coordinate disparate developers towards a common goal. Remarkable and a bright spot for our current age. 
+The depth, breadth and impact of scientific open source software exceeded any expectations that one might have had at the start of the millennium. We enjoy high quality, largely free, state-of-the-art technology all of which came to be due to a nearly magical confluence of cultural changes in software developers, backing by huge technology companies and the development of open source behavioral conventions that coordinate disparate developers towards a common goal. Even Microsoft[^0] supports and releases open source software now, inconceivable in year 1999.
 
-Nobody planned this, it just came to be and we are very fortunate to have it. However the heady days of software creation are meeting the realities of middle age which are far less 'fun' and the work has become more like actual work involving maintenance, support and shoring up all the fast fun work with re-engineered, re-conceptualized versions of the same-ol-thing. This is work-work. 
+[^0]:2004 was the first release of an open source Windows installer, https://en.wikipedia.org/wiki/Microsoft_and_open_source
 
-A very welcome development is that scientific funding agencies are recognizing that all this software could use some resources to help maintain it, e.g., NASA's recent call for infrastructure funding with the TOPS program. 
+Nobody planned this, it just came to be and we are very fortunate to have it. However the heady days of software creation are meeting the realities of middle age which are far less 'fun' and the work has become more like actual work involving maintenance, support and shoring up all the fast fun work with re-engineered, re-conceptualized versions of what already exists. This is work-work that is best handled by people paid to do the work-work, not volunteers.
 
-But the funding process needs to evolve as well. Typical reviewers expect the innovation in proposals, lean hard on the reputations of the PI/team and then, if awarded, awards less funds than requested. Addressing each in turn:
+A very welcome development is that scientific funding agencies are recognizing that all this software could use some resources to help maintain it, e.g., NASA's recent call for infrastructure funding with the TOPS program. I have been executive director of a major open source software organization, Stan, and if you have not heard of Stan then you hopefully have heard of NumFOCUS of which Stan is a member along with NumPy, SciPy, Julia and others. This position paper comes from what I thought was a more ideal way to allocate limited resources for scientific software.
 
-Innovation: Funders/reviewers, even for "infrastructure" proposals, want something new. In my experience infrastructure means build infrastructure, don't keep doing what you have been doing. Bigger, better, faster even if it is not a new idea. Much open source software needs to be rebuilt, perhaps with fewer features than current. Documentation needs to be rewritten--this is frankly boring but vital. 
+So I am arguing that funding process needs to evolve as scientific software has evolved. Where do we stand now? Typical reviewers expect novelty in proposals, lean hard on the reputations of the principle investigator/team and then, if awarded, awards less funds than requested. This is a disaster. Addressing each in turn:
 
-Reputation: The creators/maintainers of much open source scientific software are relatively junior, not famous and often don't have strong publication records. Teams of them work from soft money jobs with tremendous responsibility and impact but that is not reflected in Nature publications. 
+Innovation: Funders/reviewers, even for infrastructure proposals, want something new. In my experience, 'infrastructure' in an RFP (request for proposals) means build new infrastructure, not 'stay the course'. Bigger, better, faster even if it is not a new idea. This is not what maturing open source projects need. As time advances software needs to be redesigned, perhaps made smaller, documentation needs to be rewritten--all of this is frankly boring but vital.
 
-Volatile award amounts: The traditional 10-30% haircut upon award hurts small organizations and any efforts at diversity expressed in the funding application. A 90% paid position is not a position anymore, a diversity initiative squeezed into the application will be the first thing cut if all funds don't show up. There is no 'other source' of funding to cover funding short falls like a teaching positions when pure research funds fall short. 
+Reputation: The creators/maintainers of much open source scientific software are relatively junior, not famous and often don't have strong publication records. Teams of them work from soft money jobs with tremendous responsibility and impact but that is not reflected in Nature publications.
 
+Volatile award amounts: The traditional 10-30% haircut upon award hurts small organizations and any efforts at diversity expressed in the funding application. A 90% paid position is not a position anymore if that is the only source of funding, a diversity initiative will be the first thing cut if all funds don't show up. There is no 'other source' of funding for these projects typically.
 
 __Opportunity__
 
-The opportunity here revolves around fundamentally changing how funding decisions get made. The 'Intellectual Merit' and corresponding translation into whatever DOE/DARPA/NASA/NIH etc... calls it has to go. In its place are considerations like:
-1) How much is the software used--count citations, downloads, forum use, questions, breathless letters of support.
-2) Evidence of active development community--pull request processing, governance, forums, support.
-3) Evidence that project knows how to spend money in support of project goals
-The 'Merit' of the proposal should instead be based on well define hurdles that an organization can aspire to achieve in a workperson like fashion-- "PR ageing less than 10 days on average, check, average response to forum post 36 hours, check, diversity program in place, check..." Defining such hurdles will be a positive influence on scientific software development if done well and backed by actual funding.  
+The opportunity here revolves around fundamentally changing how funding decisions get made. The 'Intellectual Merit' and corresponding translation into whatever DOE/DARPA/NASA/NIH etc... calls it has to go. In place of innovation I suggest focusing on anti-innovation by evaluating past and current metrics with the future being "more of the same". In more detail I suggest metrics like: 1) How much is the software used as quantified by citation count, downloads, forum use or breathless letters of support.
+2) Evidence of an active development community--pull request processing, governance, forums, support.
+3) Evidence that project knows how to spend money in support of project goals.
+Also, define the merit of the proposal to be well defined/easy to compute hurdles that an organization can aspire to achieve in checklist like fashion-- "PR ageing less than 10 days on average, check, average response to forum post 36 hours, check, diversity program in place, check..." Defining such hurdles will be a positive influence on scientific software development if done well, but they must be backed by actual funding decisions.
 
-In place of reputation I propose establishing clear criteria that are MINIMALY subject to interpretation by cranky reviewers. The randomness introduced by getting sympathetic/antagonistic reviewers has to go.  Ideally criteria are so clear that administrative level review is all that is required. Then organizations can have confidence that once the criteria are achieved that they qualify for funding. 
+Stop funding top N selection: Algorithmic policies impose numerical scores whose goal is to establish relative rank of all proposals with some wiggle room for program manager judgement. If reviewers/program managers were infallible this would be a great strategy but I question the oracular properties of this arrangement. Any total order selection process reinforces biases, easy quid-pro-quo understandings and pure reputation based funded-for-being-funded feedback loops.
 
-Avoid funding top N: There is a temptation for reviewers/program managers to totally order proposals on quality metrics and award the top N given budget available. 
-
-Randomly select from N above threshold: Resources are limited, not all projects can be funded. In that case I suggest the awardees are chosen by random draw. 
+Start randomly selecting from N above a threshold: We could send all reviewers off to Baldwin's re-education camp for unbiased evaluation, or... just have reviewers eliminate proposals that seem very unlikely to succeed and fund those that remain. I suggest the awardees be chosen by random draw if there are not sufficient funds. Also, no funding reductions to 'stretch' the budget. 
 
 __Maturity__
 
-Why now? Obviously federal funders have figured out that infrastructure funding for all this free software might be a good idea. The point of this position paper is to modernize how funding is awarded with the hoped for outcome of a viable economic model for supporting vital packages like AstroPy, Numpy and my project Stan. 
+Why now? Obviously federal funders have figured out that infrastructure funding for all this free software might be a good idea. The graph below is a very simple simulation demonstrating the consequences of selection of the top N proposals based on reviewer scores compared to randomly selecting N proposals that are above a threshold. The simulation can be altered and experimented with at: https://blooming-lake-98194.herokuapp.com/.
 
-Below is a very simple simulation demonstrating the consequences of selection of the top N proposals based on reviewer scores compared to randomly selecting N proposals that are above a predefined threshold. Details are in the source for this document at: https://github.com/breckbaldwin/S3rd/blob/main/presentations/DOE2021/FundingStrategiesForSciSoftware.Rmd
+<img src="file:/home/breck/git/S3rd/presentations/DOE2021/simRun.png" style="height:200px;align:center;" /> 
 
-All projects started with the same merit value = .1, and reputation value = 0. The score for a round of funding is a random draw from a normal distribution centered on merit with standard deviation .1 then added to the reputation value. Threshold for funding is .2 so candidates have to get a bit lucky to draw a high value for the score initially to clear the threshold and then get lucky by being drawn from the set of candidates above threshold. If a candidate is funded then their reputation increases .1 and the resource count increases by 1. Resources/reputation can only go up, merit stays the same. 
+Resources are reported on the y axis with 1 unit per award, an award increases reputation of a project by .1 and the score is reputation + constant merit (.2) + random noise. The 'Top N selection' strategy are shown by lines which concentrates resources to past awardees given their reputation increment. The 'Random N selection' strategy, dots, works exactly the same except random awardees are selected that are above threshold of .3. The latter spreads resources much more evenly. 
 
-<img src="file:/home/breck/git/S3rd/presentations/DOE2021/graph.png" style="height:300px;align:center;" /> 
+__An Experiment__
 
-```{python eval=FALSE, fig.width=8, include=FALSE}
-# Doesnt quite print right in Rmarkdown but correct code for simulation
-
-from numpy.random import default_rng
-import random
-import pandas as pd
-import plotnine
-
-rng = default_rng()
-
-nScientists = 10
-
-sci = [{}] * nScientists
-sci2 = [{}] * nScientists
-
-for i in range(nScientists):
-    sci[i] = {'id': i, 'reputation': .1, 'merit': .1, 'resources': 0}
-    if i%10 == 0:
-        sci[i]['merit'] += 0
-    sci2[i] = {'id': i, 'reputation': .1, 'merit': .1, 'resources': 0}
-    if i%10 == 0:
-        sci2[i]['merit'] += 0
-        
-start = 0
-nApplicants = nScientists
-nRfp = 15
-nFunded = 3
-threshold = 0.2
-sd_merit = 0.1
-x = []
-y = []
-y2 = []
-
-for rfp in range(0, nRfp):
-    for i in range(0, nApplicants):
-        sci[i]['score'] = rng.normal(sci[i]['merit'], sd_merit, 1)[0] +\
-                                 sci[i]['reputation']
-        sci2[i]['score'] = rng.normal(sci2[i]['merit'], sd_merit, 1)[0] +\
-                                  sci2[i]['reputation']
-    sorted_scores = sorted(sci, key=lambda s: s['score'], reverse=True)
-    for winner in sorted_scores[0:nFunded]:
-        winner['reputation'] += .1
-        winner['resources'] += 1
-
-    candidates = [s for s in sci2 if s['score'] > threshold]
-    for winner in random.sample(candidates, nFunded):
-        winner['reputation'] += .1
-        winner['resources'] += 1
-
-    jitter = .1
-    for i in range(0, nScientists):
-        x.append(rng.normal(rfp, jitter, 1)[0])
-        y.append(rng.normal(sci[i]['resources'], jitter, 1)[0])
-        y2.append(rng.normal(sci2[i]['resources'], jitter, 1)[0])
-
-df = pd.DataFrame()
-df2 = pd.DataFrame()
-df['resources'] = y
-df2['resources'] = y2
-df['rfp_count'] = x
-df2['rfp_count'] = x
-df['selection method'] = ['Top N totally ordered by score'] * len(x)
-df2['selection method'] = ['Random N score above threshold'] * len(x)
-
-
-plot = (
-    plotnine.ggplot(mapping=plotnine.aes(x='rfp_count', y='resources', group = 'selection method'))
-    + plotnine.geom_point(data=df, mapping=plotnine.aes(color='selection method'), size=.2) 
-    + plotnine.geom_point(data=df2, mapping=plotnine.aes(color='selection method'), size=.2)
-    + plotnine.ggtitle(f"{nFunded} awards per funding cycle, {nApplicants} participants")
-    + plotnine.labs(x="Iterations of funding cycle", y="Accumulated resources over time")
-    + plotnine.theme_xkcd()
-    )
-
-print(plot)
-```
-
-The graph shows the same 10 projects competing for rounds of funding iterated on the x axis. Obviously on the select top N approach, once a project gets sufficient reputation points it will dominate the other projects shown in red where, since n=3, we see 3 clear winners and the 7 remaining projects at 0/1 resource count. The random N approach is far more effective at spreading the resources across the projects with no project less than 2 resource units. I ran for 15 iterations to get a clear separation of the approaches but the pattern is clear earlier. 
+These position papers are supposed to be the about the science of scientific software, so I'll suggest an experiment. DOE's next call for proposals should award 50% based on the standard funding process and 50% with a random draw from a pool of competent submissions. As much as it pains me as Bayesian, we have a perfect null hypothesis test of the oracle of current practices against the power of randomness.  
